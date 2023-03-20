@@ -243,7 +243,8 @@ namespace jc2_7 {
 * 偏特化是为一类类型指定特定实现，是一种更通用的特化
 */
 namespace jc2_8 {
-
+    //template <typename>
+    //class A;
     template <typename T>
     class A {
     public:
