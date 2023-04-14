@@ -564,11 +564,13 @@ public:
     }
 
 private:
-    void _Move_construct(vector& _Right, true_type) noexcept { // move from _Right, stealing its contents
+    void _Move_construct(vector& _Right, true_type) noexcept {
+        // move from _Right, stealing its contents
         _Mypair._Myval2._Take_contents(_Right._Mypair._Myval2);
     }
 
-    void _Move_construct(vector& _Right, false_type) { // move from _Right, possibly moving its contents
+    void _Move_construct(vector& _Right, false_type) {
+        // move from _Right, possibly moving its contents
         if _CONSTEXPR_IF (!_Alty_traits::is_always_equal::value) {
             if (_Getal() != _Right._Getal()) {
                 const auto& _Right_data   = _Right._Mypair._Myval2;
