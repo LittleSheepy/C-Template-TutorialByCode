@@ -100,7 +100,10 @@ namespace jc4_3 {
 
     template <typename... Args>
     void print(Args&&... args) {
-        auto a = { (std::cout << std::forward<Args>(args) << std::endl, 0)... };
+        auto a = { (std::cout << std::forward<Args>(args) << std::endl, 2)... };
+        for (auto aa : a) {
+            cout << aa << endl;
+        }
     }
 
     void foo() {

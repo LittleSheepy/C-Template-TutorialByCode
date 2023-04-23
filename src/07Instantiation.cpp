@@ -18,7 +18,7 @@
 //#include <utility>
 //#include <list>
 
-#define vector_hpp 1
+#define vector_hpp 0
 #if vector_hpp
 #include "type_traits.hpp"
 #include "vector.hpp"
