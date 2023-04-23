@@ -218,6 +218,6 @@ namespace jc4_7 {
 }  // namespace jc
 
 void VariadicTemplateDemo(void) {
-    jc4_7::foo();
+    jc4_3::foo();
 }
 

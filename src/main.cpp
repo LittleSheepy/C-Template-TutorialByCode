@@ -13,6 +13,6 @@ void listSTL();
 int main(void)
 {
     SetConsoleOutputCP(65001);
-    Instantiation();
+    VariadicTemplateDemo();
     return 0;
 }
